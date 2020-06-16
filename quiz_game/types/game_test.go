@@ -5,10 +5,10 @@ import (
 )
 
 func TestGame(t *testing.T) {
-	game := new(Game)
+	game := NewGame(0)
 	correctAnswers := game.correctAnswers
 	questions := game.questions
-	timeLimit := game.TimeLimit
+	timeLimit := game.timeLimit
 
 	if correctAnswers != 0 {
 		t.Errorf("Game initialized with correctAnswers=%d, expected 0", correctAnswers)

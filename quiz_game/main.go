@@ -25,7 +25,7 @@ func main() {
 
 	flag.Parse()
 
-	game := types.Game{TimeLimit: *timeLimit}
+	game := types.NewGame(*timeLimit)
 
 	csvFile, err := os.Open(*csvFileName)
 
